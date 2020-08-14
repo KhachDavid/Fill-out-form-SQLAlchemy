@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Գրանցման Հայտ</title>
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+    <div class="container">
+         <form id="contact" method="post">
+             <h3>Դասընթացի մասնակցության հայտ</h3>
+             <p style="color: green">{{ alert }}</p>
+            <fieldset>
+                <input placeholder="Անուն" name="name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+             <fieldset>
+                <input placeholder="Ազգանուն" name="surname"type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Էլեկտրոնային հասցե (e-mail)" name="email" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Անձնագրի համար" type="text" name="passport" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder = "Գրանցման հասցե ըստ անձնագրի "  type="text" name="address" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Մասնագիտություն" type="text" name="profession" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Ուղարկել</button>
+            </fieldset>
+         </form>
+</div>
+</body>
+</html>
